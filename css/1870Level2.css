@@ -1,0 +1,327 @@
+body {
+	background: #524b31 url(../images/bGrounds/bGroundTile02.jpg) no-repeat 50% 0%;
+}
+
+
+header {
+	width: 960px;
+	height: 205px;
+	position: relative;
+}
+
+#fillerDiv {
+	background: #6b634c url(../images/bottomShadow.png) no-repeat center top;
+	width: 921px;
+	height: 120px;
+	position: relative;
+	top: 20px;
+	font-size:24px;
+	color:#bbb090;
+	font-weight:normal;
+	padding:10px 20px;
+	/*text-shadow: 0px 1px 1px #222, -1px 0px 1px #444;*/
+	text-shadow: 0px 1px 1px #222, -3px 0px 10px #444;
+	font-family: 'Rock Salt', arial, serif;
+}
+
+#titleText {
+	position: relative;
+	top: 20px;
+}
+
+#War {
+	/*font-size: 40px;*/
+	font-size: 140%;
+}
+
+p.textDrop {
+	position: relative;
+	z-index: 1000;
+}
+
+#dustPuffs {
+	width: 300px;
+	height: 60px;
+	position: relative;
+	top: -50px;
+	left: 340px;
+	z-index: 999;
+	display: none;
+}
+
+.dustPuffs {
+	background: url('../images/smoke60.png') no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	/*z-index: 999;*/
+}
+
+#dustPuff01 {
+	top: -10px;
+	left: 10px;
+}
+
+#dustPuff02 {
+	top: 20px;
+	left: 40px;
+}
+
+#dustPuff03 {
+	top: -30px;
+	left: 70px;
+}
+
+#dustPuff04 {
+	left: 80px;
+}
+
+#dustPuff05 {
+	left: 140px;
+}
+
+#dustPuff06 {
+	top: -20px;
+	left: 160px;
+}
+
+#dustPuff07 {
+	left: 180px;
+}
+
+ul#nav {
+	position: absolute;
+	/*
+	background: url(../images/bGrounds/tabs01.png) no-repeat;
+	width: 675px;
+	height: 48px;
+	top: 40px;
+	left: 350px;
+	*/
+	
+	background: url(../images/bGrounds/tabs02.png) no-repeat;
+	width: 675px;
+	height: 48px;
+	top: -10px;
+	left: 350px;
+	
+}
+
+ul#nav li {
+	float: left;
+	margin-left: 30px;
+	cursor: pointer;
+	position: relative;
+	top: 10px;
+	z-index: 1;  /* allows "The War" link to be on top of the fillerDiv div */
+}
+
+ul#nav li#first {
+	margin-left: 20px;
+}
+
+ul#nav a#theArt {
+/*
+	background: url(../images/navLinks/nav04.png) no-repeat left top;
+	height: 30px;
+	width: 64px;*/
+	margin-left: 15px;
+}
+
+ul#nav a#theLibrary {
+/*
+	background: url(../images/navLinks/nav05.png) no-repeat left top;
+	height: 30px;
+	width: 66px;*/
+	margin-left: 20px;
+}
+
+
+/* Menu style */
+.subMenu {
+	background:#343126 url(../images/bottomShadow.png) no-repeat;
+	/*background: #343126;*/
+	width: 961px;
+	/*width:100%;        stretch container div over width of page */
+	overflow:hidden;  /* hide any overflow of this div */
+	position: relative;
+}
+
+/* Selects the <ul> inside the .subMenu class (div) */
+.subMenu ul {
+	/*height:350px;*/
+	height:340px;
+	margin-left:50px;
+	position:relative;
+	display:block;    /* display as a block-level element */
+	width:1300px;     /* give the <ul> enough width so <li>'s don't wrap */
+}
+
+/* Selects all <li>'s in the <ul> inside the .subMenu div */
+.subMenu ul li {
+	float:left;
+	/*width:75px;*/
+	width:90px;
+	/*height:350px;*/
+	height:340px;
+	position:relative;
+	overflow:hidden;     /* hide any overflow for these <li> elements */
+	border-right:2px solid #111;
+}
+
+/* Selects the .menuPreview <span> which will contain the
+   black and white background image positioned absolutely */
+.menuPreview {
+	/*width:75px;*/
+	width:90px;
+	/*height:350px;*/
+	height:340px;
+	cursor:pointer;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:transparent url(../images/theWar/bw.jpg) no-repeat top left;
+}
+
+/* Selects the .menuImage <span> which will contain the
+   color background image positioned absolutely.  Its position
+   and opacity will be animated via jquery...   */
+.menuImage {
+	position:absolute;
+	left:90px;   /* note this is positioned further to the right */
+	top:0px;
+	/*width:75px;*/
+	width:90px;
+	/*height:350px;*/
+	height:340px;
+	opacity:0.2;   /* set its beginning opacity to 20% */
+	background:transparent url(../images/theWar/color.jpg) no-repeat top left;
+}
+
+/* Define the positioning of the background for both the 
+   .menuPreview and .menuImage <span>'s within their parent
+   link (<a>) elements (.pos1, .pos2, etc... classes) */
+.pos1 span {
+	background-position:0px 0px;
+}
+
+.pos2 span {
+	background-position:-90px 0px;
+	/*background-position:-75px 0px;*/
+}
+
+.pos3 span {
+	background-position:-180px 0px;
+	/*background-position:-152px 0px;*/
+}
+
+.pos4 span {
+	background-position:-270px 0px;
+	/*background-position:-227px 0px;*/
+}
+
+.pos5 span {
+	background-position:-360px 0px;
+	/*background-position:-302px 0px;*/
+}
+/*
+.pos6 span {
+	background-position:-377px 0px;
+}
+*/
+
+/* Select the .menuDescription content div and absolutely position it.
+   The left position for it is going to be the width of the spans. */
+.menuDescription {
+	position:absolute;
+	width:278px;
+	height:320px;
+	border-right:7px solid #bbb090;
+	/*border-right:7px solid #f0f0f0;*/
+	padding:20px;
+	/* left: 75px;*/
+	left:90px;
+	top:0px;
+	background:#fff;
+}
+
+/* Spice up the <h2> in the .menuDescription div with a nice grungy
+   font that we'll get from Google fonts.  Add a background
+   stripes image as well. */
+.menuDescription h2 {
+	font-family: 'Rock Salt', arial, serif;
+	font-size:26px;
+	color: #6b634c;
+	/*color:#333;*/
+	padding:10px;
+	text-shadow:0px 0px 1px #fff;
+	background:#fff url(../images/stripe_light.gif) repeat top left;
+}
+
+/* Spice up the <h2> in the .menuDescription div with a nice grungy
+   font that we'll get from Google fonts. */
+.menuDescription h3 {
+	font-family: 'Raleway', arial, serif;
+	color: #d8cfb4;
+	/*color:#fff;*/
+	font-size: 16px;
+	text-shadow:0px 0px 1px #000;
+	font-style:normal;
+	padding:10px;
+	background: #6b634c
+	/*background:#333;*/
+}
+
+/* Style the paragraphs within the .menuDescription content div */
+.menuDescription p {
+	color:#000;
+	padding:10px 5px 0px 5px;
+	line-height:18px;
+	font-size:12px;
+	font-family: Arial;
+	text-align: justify;
+	/*text-transform:uppercase;*/
+}
+
+ul.subNav {
+	/*display: inline;*/
+	list-style-type: square;
+	list-style-position: inside;
+	margin-left: 0px;
+	padding-left: 20px;
+	width: 270px;
+	color: #000;
+}
+
+ul.subNav li {
+	border-right: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: 250px;
+	text-align: left;
+	overflow: visible;
+	/*text-transform:uppercase;*/
+}
+
+ul.subNav li a {
+	color: #6b634c;
+}
+
+ul.subNav li a:hover {
+	color: #bbb090;
+}
+
+.shadowPic {
+	background: #6b634c url(../images/bottomShadow.png) no-repeat center top;
+	height: 14px;
+}
+
+#picDiv {
+	/*background: #dbccae url(../images/Uhlans.png) no-repeat center top;*/
+	background: #6b634c url(../images/Uhlans.png) no-repeat center top;
+	width: 960px;
+	height: 260px;
+	position: relative;
+}

@@ -1,0 +1,450 @@
+/* global style resets */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	outline-style: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Tahoma, sans-serif;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+body {
+	font: 12px/1.8 Arial, sans-serif;
+	color: #76623c;
+	background: #524b31;
+	/*background: #524b31 url(../images/bGrounds/bGroundTile02.jpg) repeat-y 50% 0%;*/
+	position: relative;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* end global style resets */
+
+
+#wrapper {
+	margin: 0 auto;
+	text-align: center;
+	width: 960px;
+}
+
+
+#loginForm_wrap {
+	/*background: #524b31 url(../images/bGrounds/topBground4.jpg) repeat-y 50% 0%;*/
+	background: #524b31 url(../images/bGrounds/topBground5.jpg) repeat-y 50% 0%;
+	         /*   color      background image  tile in y-axis  50% center and 0% top */
+}
+
+
+/* Client Login form */
+
+#loginForm {
+	width: 900px;
+	/* top and bottom = 0px, right and left = auto => browser calculates margin */
+	margin: 0 auto;
+	/* position this div relative to normal flow; i.e., relative to where it 
+	   would normally be in normal flow. (eg left: 20px; would add 20 pixels
+	   to this element's current LEFT position */
+	position: relative;
+	padding-bottom: 24px;
+}
+
+
+#loginForm form {
+	padding: 10px 0;  /* top and bottom = 8px, right and left = 0px */
+}
+
+#loginForm h3 {
+	color: #dbdddf;
+	font-weight: normal;
+	text-align: left;
+}
+
+#loginForm p {
+	font: 24px Tahoma;
+	/*color: #f0b783; */
+	color: #ffffcc;
+	margin-bottom: 10px;
+}
+
+
+#loginForm input {
+	border: 2px solid #4c535d;
+	padding: 5px 3px;
+	color: #4c535d;
+	background: #dbdddf;
+	font-size: 15px;
+	width: 165px;
+	margin-right: 10px;
+	float: left;
+}
+
+
+#loginForm  input.goButton {
+	/* border: 0 none;
+	background: none;*/
+	border: 1px solid #4c535d;
+	color: #5d4c5b;
+	background: #bec3ca;
+	width: auto;
+}
+
+
+#loginForm #newsletter_login {
+	/* absolutely position this element within its parent element
+	   (the #loginForm div) by setting its top and right properties */
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left: 1px dotted #dbdddf;
+	padding-left: 2.4em;
+}
+
+
+/* Client login tab */
+
+#loginTab {
+	height: 3px;
+	position: relative;
+	bottom: 0;
+	z-index: 2; /* had to make this at least 2 for it to treat btn as link */
+	/*background: #524b31 url(../images/bGrounds/topBground.png) no-repeat 50% 0%;*/
+}
+
+
+#loginTab p {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+#loginTab a {
+	float: left;
+	margin-top: 5px;
+	display: block;
+}
+
+
+#loginTab a#loginHook {
+	position: absolute;
+	top: -2px;
+	left: 8px;
+	background: url(../images/loginButton.png) no-repeat;
+	width: 80px;
+	height: 19px;
+	text-indent: -9999px;
+	margin-left: 10px;
+}
+
+#header {
+	background: #463003 url(../images/bGrounds/logo_backGround.jpg) no-repeat 50% 0%;
+	width: 960px;
+	height: 205px;
+	position: relative;
+}
+
+#logoPic {
+	/*position: relative;
+	top: 10px;*/
+	float: right;
+}
+
+img#logo1870 {
+	width: 273px;
+	height: 113px;
+	position: absolute;
+	display: block;
+	top: 86px;
+	/*top: 96px;*/
+	right: 69px;
+}
+
+img#diary {
+	position: absolute;
+	top: -18px;
+	left: 0px;
+	z-index: 1;
+}
+
+#2colWrapper {
+	width: 960px;
+}
+
+#secondaryContainer {
+	background: #463003 url(../images/bGrounds/secondary_backGround.jpg) no-repeat 50% 0%;
+	width: 285px;
+	height: 495px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	float: left;
+}
+
+img#journal {
+	position: absolute;
+	top: 84px;
+	left: 14px;
+}
+
+#contentWrapper {
+	position: relative;
+	background: #463003 url(../images/bGrounds/primary_backGround.jpg) no-repeat;
+	width: 675px;
+	height: 495px;
+	float: right;
+	z-index: 2;
+}
+
+ul#nav {
+	position: relative;
+	width: 675px;
+	top: 28px;
+	left: 50px;
+}
+/*
+ul#nav {
+	width: 600px;
+	border: 1px solid;
+}
+*/
+ul#nav li {
+	float: left;
+	margin-left: 39px;
+	cursor: pointer;
+}
+
+ul#nav li#first {
+	margin-left: 0px;
+}
+
+
+ul#nav li a {
+	display: block;
+	text-indent: -9999px;
+}
+
+ul#nav a#theWar {
+	background: url(../images/navLinks/nav01.png) no-repeat left top;
+	height: 30px;
+	width: 76px;
+}
+
+ul#nav a#theDepot {
+	background: url(../images/navLinks/nav02.png) no-repeat left top;
+	height: 30px;
+	width: 81px;
+}
+
+ul#nav a#gaming1870 {
+	background: url(../images/navLinks/nav03.png) no-repeat left top;
+	height: 30px;
+	width: 118px;
+}
+
+ul#nav a#theArt {
+	background: url(../images/navLinks/nav04.png) no-repeat left top;
+	height: 30px;
+	width: 64px;
+}
+
+ul#nav a#theLibrary {
+	background: url(../images/navLinks/nav05.png) no-repeat left top;
+	height: 30px;
+	width: 66px;
+}
+
+ul#nav a:hover#theWar {
+	background: url(../images/navLinks/nav01.png) no-repeat left -30px;
+	height: 30px;
+	width: 76px;
+}
+
+ul#nav a:hover#theDepot {
+	background: url(../images/navLinks/nav02.png) no-repeat left -30px;
+	height: 30px;
+	width: 81px;
+}
+
+ul#nav a:hover#gaming1870 {
+	background: url(../images/navLinks/nav03.png) no-repeat left -30px;
+	height: 30px;
+	width: 118px;
+}
+
+ul#nav a:hover#theArt {
+	background: url(../images/navLinks/nav04.png) no-repeat left -30px;
+	height: 30px;
+	width: 64px;
+}
+
+ul#nav a:hover#theLibrary {
+	background: url(../images/navLinks/nav05.png) no-repeat left -30px;
+	height: 30px;
+	width: 66px;
+}
+
+
+#primaryContainer {
+	position: relative;
+	clear: left;
+	text-align: left;
+	top: 22px;
+	left: 40px;
+}
+
+#navDescWrapper {
+	/*z-index: 10;*/
+}
+
+#navDesc {
+	background: url(../images/tornPaper02.png) no-repeat;
+	z-index: 3;
+	height: 170px;
+	width: 675px;
+}
+
+.tabDesc {
+	position: absolute;
+	top: 15px;
+	left: 5px;
+	width: 320px;
+	padding: 10px;
+	opacity: 0.9;
+	display: none;
+}
+
+#defaultTab {
+	display: block;
+}
+
+.tabDesc h3 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.navPolaroid {
+	position: absolute;
+	top: -16px;
+	left: 370px;
+}
+
+#primaryContent {
+	position: relative;
+	width: 600px;
+	height: 220px;
+	margin-top: 20px;
+	/*border-top: 1px dotted #76623c;*/
+}
+
+#primaryPic {
+	float: left;
+	width: 133px;
+	height: 220px;
+}
+
+#primaryPic img {
+	position: absolute;
+	top: -30px;
+	left: 0px;
+}
+
+#motd {
+	float: left;
+	margin-top: 5px;
+	padding-left: 20px;
+	width: 200px;
+	font-family: Tahoma, Trebuchet MS, sans-serif;
+	font-size: 13px;
+	font-weight: 900;
+	line-height: 1.0em;
+	border-top: 1px dotted #76623c;
+	border-left: 1px dotted;
+}
+
+#motd h4 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: Trebuchet MS, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 2.0em;
+}
+
+#quoteToday {
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	padding-left: 20px;
+	width: 200px;
+	font-family: Tahoma, Trebuchet MS, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.4em;
+	border-top: 1px dotted #76623c;
+	border-left: 1px dotted;
+}
+
+#quoteToday h4 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: Tekton Pro, Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: 600;
+	line-height: 1.8em;
+}
+
+#footerWrap {
+	height: 50px;
+	background: #000 url(../images/bGrounds/footerBground.jpg) repeat-y 50% 0%;
+	clear: right;
+}
+
+footer {
+	position: relative;
+	width: 948px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-bottom: 2em;
+	color: #999;
+	overflow: auto;
+	background: url(../images/bottomShadow.png) no-repeat;
+	text-align: left;
+}
+
+footer li {
+	display: inline;
+}
+
+footer address {
+	float: right;
+	text-align: right;
+	padding-right: 15px;
+}
+
+footer a {
+	color: #999;
+}
+
+footer a:hover { 
+	color: #dbdddf;
+}
